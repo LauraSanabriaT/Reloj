@@ -1,32 +1,36 @@
-H = 0
+j = 0
 
 def setup() :
     size(300, 600)
 
 def draw() :
-    global H
+    global j
     background(175)
 
 
-    ellipse(width/ 2, H, 50, 50)
-    fill(232, 5, 24)
-    if H > height :
-        H = 0
+    ellipse(width/ 2, j, 50, 50)
+    fill(255, 134, 239)
+    if j > height :
+        j = 0
     else:
-        H = map(second(), 0, 59, 0, height)
-
-
-    ellipse(width/ 2, H, 50, 50)
-    fill(232, 5, 24)
-    if H > height :
-        H = 0
+        j = map(minute(), 0, 60, 0, height)
+        
+        
+        
+        
+    ellipse(width/ 2, j, 50, 50)
+    fill(226, 134, 255)
+    if j > height :
+        j = 0
     else:
-        H = map(minute(), 0, 60, 0, height)
+        j = map(second(), 0, 59, 0, height)
+        
+        
+        
 
-
-    ellipse(width/ 2, k, 50, 50)
-    fill(232, 5, 24)
-    if H > height :
-        H = 0
+    ellipse(width/ 2, j, 50, 50)
+    fill(114, 224, 250)
+    if j > height :
+        j = 0
     else:
-        H = map(hour(), 0, 24, 0, height)
+        j = map(hour(), 0, 24, 0, height)
